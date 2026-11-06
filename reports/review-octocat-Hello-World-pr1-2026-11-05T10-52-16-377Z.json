@@ -1,0 +1,76 @@
+{
+  "pullRequest": {
+    "owner": "octocat",
+    "repo": "Hello-World",
+    "number": 1
+  },
+  "fileReviews": [
+    {
+      "file": "README",
+      "codeQuality": {
+        "file": "README",
+        "issues": [
+          {
+            "line": 1,
+            "severity": "info",
+            "category": "best-practice",
+            "description": "README introduces the repository; consider adding descriptive project links and badges",
+            "suggestion": "Add Markdown badges and getting-started documentation"
+          }
+        ],
+        "overallScore": 95,
+        "summary": "Documentation file is clean and meets standard repository presentation conventions."
+      },
+      "testCoverage": {
+        "file": "README",
+        "hasTests": false,
+        "testFiles": [],
+        "untestedPaths": [],
+        "coverageEstimate": 100,
+        "summary": "Non-executable documentation file requires no automated unit test coverage."
+      },
+      "refactorings": {
+        "file": "README",
+        "suggestions": [
+          {
+            "type": "modernize",
+            "location": "Line 1",
+            "impact": "low",
+            "description": "Apply Markdown header formatting to title",
+            "before": "Hello GitHub!",
+            "after": "# Hello GitHub!",
+            "benefits": "Conforms to GitHub Flavored Markdown specification for project headers"
+          }
+        ],
+        "summary": "Minor Markdown header modernization opportunity."
+      }
+    }
+  ],
+  "summary": {
+    "totalFiles": 1,
+    "overallScore": 95,
+    "criticalIssues": 0,
+    "highPriorityTests": 0,
+    "refactoringOpportunities": 1
+  },
+  "recommendations": [
+    {
+      "priority": "low",
+      "category": "Documentation",
+      "description": "Format repository README with Markdown H1 header syntax and add brief usage instructions.",
+      "files": [
+        "README"
+      ]
+    }
+  ],
+  "metadata": {
+    "analyzedAt": "2026-11-05T10:52:16.372Z",
+    "duration": 3820,
+    "agentVersions": {
+      "code-quality-analyzer": "1.0.0",
+      "test-coverage-analyzer": "1.0.0",
+      "refactoring-suggester": "1.0.0",
+      "orchestrator": "1.0.0"
+    }
+  }
+}
